@@ -100,7 +100,7 @@ def _main():
                                            round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))))
 
     
-    # jinoo
+    # inoo
     centerPoints = []
     passed = [0]
 
@@ -153,6 +153,9 @@ def _main():
         else:
             video_writer.write(frame.astype(np.uint8))
 
+        #여기다가 모자이크를 넣어봅시다.
+
+        
         cv2.imshow(wind_name, frame)
 
         key = cv2.waitKey(1)
